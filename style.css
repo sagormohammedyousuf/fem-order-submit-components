@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Overpass:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700&family=Red+Hat+Display:wght@400;500;600;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&display=swap');
+
+:root {
+
+    /* ### Primary */
+
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+
+/* ### Neutral */
+
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--darkblue: hsl(223, 47%, 23%);
+
+/* ### Typography  */
+
+--normal-fs: 16px;
+--medium-fw: 500;
+--bold: 700;
+--ex-bold:900;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--pale-blue);
+}
+
+.container {
+    width: 100vw;
+    height: 98vh;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summery-card {
+    flex-basis: 25%;
+    width: 100%;
+    height: 70vh;
+    background: #fff;
+
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+}
+
+
+.hero-img{
+    border-radius:20px 20px 0 0;
+    width: 100%;
+    -webkit-border-radius:20px 20px 0 0;
+    -moz-border-radius:20px 20px 0 0;
+    -ms-border-radius:20px 20px 0 0;
+    -o-border-radius:20px 20px 0 0;
+}
+
+.info{
+    padding: 2rem;
+    
+}
+
+.info-title {
+    padding: 0rem  0 1rem 0;
+    font-weight: var(--bold);
+    font-size: 2rem;
+}
+
+.info-text {
+    color: var(--desaturated-blue);
+    padding-bottom: 2rem;
+}
+
+.plan-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--very-pale-blue);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.music-icon {
+    width: 50px;
+    height: 50px;
+
+    margin-right: 1rem;
+}
+
+
+.plan-type {
+    display: flex;
+    align-items: center;
+}
+
+.plan-price {
+    color: var(--desaturated-blue)
+}
+
+
+.change-btn {
+    color: var(--bright-blue);
+    text-decoration: underline;
+    font-weight: var(--medium-fw);
+    
+}
+
+.btn-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.pay-btn {
+    width: 100%;
+    height: 42px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background: var(--bright-blue);
+    color: #fff;
+    font-weight: var(--medium-fw);
+    cursor: pointer;
+    
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+
+.btn-section a {
+    padding: 2rem;
+    color: var(--desaturated-blue);
+    cursor: pointer;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+    }
+
+    .summery-card {
+        flex-basis: 100%;
+    }
+
+    .info {
+        padding: 1.5rem;
+    }
+
+    .info-title {
+        font-size: 1.5rem;
+
+    }
+
+    .plan-type h3 {
+        font-size: 1rem;
+    }
+
+    .plan-type span {
+        font-size: 14px;
+    }
+
+    .change-btn {
+        font-size: 0.9rem;
+    }
+}
